@@ -1,0 +1,684 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <title>Home Two - Meme coin ICO & Crypto Tailwindcss Template</title>
+  <script defer src="assets/js/app.js"></script><link href="assets/css/index.css" rel="stylesheet"></head>
+
+  <body class="relative text-base text-black">
+    <!-- scroll top -->
+    <button class="scroll-top border-danger hover:border-primary group fixed bottom-8 right-5 z-50 flex size-12 translate-y-20 items-center justify-center rounded-full border-2 bg-h1Primary2 opacity-0 duration-300 hover:text-title sm:bottom-10 sm:right-10">
+  <div class="bg-danger group-hover:bg-primary flex size-9 items-center justify-center rounded-full duration-300">
+    <i class="ph ph-arrow-up text-2xl text-black duration-300"></i>
+  </div>
+</button>
+
+
+    <!-- navbar -->
+    <header class="desktop-nav-container-2 fixed left-0 top-0 z-50 w-full max-4xl:px-5 max-xl:hidden">
+      <div class="custom-container flex items-center justify-between">
+        <div>
+          <a href="/">
+            <img src="./assets/images/logo-2.png" alt="logo" />
+          </a>
+        </div>
+        <ul class="flex items-center justify-between gap-3 py-[30px] xxl:gap-5">
+          <li class="dropdown-item">
+            <button class="dropdown-btn home-2-nav-item">Home <i class="ph ph-caret-down text-lg"></i></button>
+            <ul class="dropdown-menu two">
+              <li><a class="menu-link two" href="index.html">Home One</a></li>
+              <li><a class="menu-link two" href="home-2.html">Home Two</a></li>
+              <li><a class="menu-link two" href="home-3.html">Home Three</a></li>
+            </ul>
+          </li>
+          <li class="list-none"><a href="#how-to-buy" class="home-2-nav-item">HOW TO BUY</a></li>
+          <li class="list-none"><a href="#about" class="home-2-nav-item">About</a></li>
+          <li class="list-none"><a href="#tokenomics" class="home-2-nav-item">TOKENOMICS</a></li>
+          <li class="list-none"><a href="#roadmap" class="home-2-nav-item">ROADMAP</a></li>
+          <li class="list-none"><a href="#faq" class="home-2-nav-item">FAQ</a></li>
+          <li class="list-none"><a href="#contact" class="home-2-nav-item">contact</a></li>
+        </ul>
+        <a href="#contact" class="group rounded-[32px] bg-[#FEF200] px-1 py-3 duration-300 hover:bg-h1Primary2">
+          <span class="h5 rounded-full border-2 border-black bg-[#FEF200] py-2.5 font-semibold uppercase text-black duration-300 spx32px group-hover:bg-h1Primary2 group-hover:text-black">Get Started</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+<div class="relative w-full xl:hidden">
+  <div id="overlay" class="invisible fixed right-0 top-0 z-[32] h-screen w-0 bg-black bg-opacity-60 duration-700 ease-in-out"></div>
+  <nav class="fixed top-0 z-[31] w-full bg-[#005909] shadow-lg xl:hidden">
+    <div class="container relative flex items-center justify-between px-3 py-3 md:py-5">
+      <a href="index.html">
+        <img src="./assets/images/logo-1.png" width="172" height="47" alt="logo" />
+      </a>
+      <button id="menuToggle" class="cursor-pointer p-2 xl:hidden">
+        <i class="ph ph-list text-[24px] text-h1Primary2" style="font-size: 30px"></i>
+      </button>
+    </div>
+  </nav>
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="fixed left-0 top-0 z-[33] h-screen w-full max-w-[350px] -translate-x-[120%] overflow-y-auto bg-light pb-4 shadow-2xl duration-700 ease-in-out xl:hidden">
+    <div class="flex items-center justify-between px-6 py-4">
+      <img src="./assets/images/logo-2.png" width="172" height="47" alt="logo" />
+      <button id="closeMenu" aria-label="mobile menu close" class="cursor-pointer text-n2">
+        <i class="ph ph-x text-[24px]"></i>
+      </button>
+    </div>
+    <ul class="px-3">
+      <!-- Home -->
+      <li class="w-full">
+        <button class="flex w-full items-center justify-between px-3 py-2 text-n2">
+          <span class="text-lg">Home</span>
+          <i class="ph ph-plus text-[24px]"></i>
+        </button>
+        <ul class="submenu" style="display: none">
+          <li><a href="/" class="inline-flex w-full px-5 py-2 text-n2">- Home 1</a></li>
+          <li><a href="home-2.html" class="inline-flex w-full px-5 py-2 text-n2">- Home 2</a></li>
+          <li><a href="home-3.html" class="inline-flex w-full px-5 py-2 text-n2">- Home 3</a></li>
+        </ul>
+      </li>
+
+      <li class="w-full">
+        <a href="#how-to-buy" class="inline-flex px-3 py-2 text-n2">How To Buy</a>
+      </li>
+      <li class="w-full">
+        <a href="#about" class="inline-flex px-3 py-2 text-n2">About</a>
+      </li>
+      <li class="w-full">
+        <a href="#tokenomics" class="inline-flex px-3 py-2 text-n2">Tokenomics</a>
+      </li>
+      <li class="w-full">
+        <a href="#roadmap" class="inline-flex px-3 py-2 text-n2">Roadmap</a>
+      </li>
+      <li class="w-full">
+        <a href="#contact" class="inline-flex px-3 py-2 text-n2">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+    <main>
+      <!-- banner -->
+      <section class="relative bg-[#E7FF53] pt-[138px]" id="contact">
+        <img src="./assets/images/home-2-banner-star.png" alt="Banner Star Image" class="absolute left-1/2 top-[130px] -translate-x-1/2" />
+        <div class="custom-container relative z-10">
+          <h1 class="split_anim text-center font-title-font text-[50px] uppercase leading-[90%] text-black sm:text-[70px] md:text-[120px] lg:text-[170px] xxl:text-[230px] 4xl:text-[300px]">LABUBU</h1>
+          <div class="relative max-xxl:smt120px max-md:px-3 xxl:mt-[150px] xxxl:mt-[210px]">
+            <div class="max-xxxl:hidden">
+              <img src="./assets/images/home-2-banner-left.png" alt="Banner Left Image" class="animate-left-right absolute -top-20 left-10" data-aos="fade-right" />
+              <img src="./assets/images/home-2-banner-right.png" alt="Banner Left Image" class="animate-right-left absolute -top-10 right-10" data-aos="fade-left" />
+            </div>
+            <div class="reveal_anim mx-auto max-w-[636px] rounded-2xl border-4 border-black bg-[#FEF200] sp40px">
+              <div class="flex items-center justify-center gap-2">
+                <img src="./assets/images/coin.png" alt="Image" />
+                <span class="lead-text font-title-font text-black">BUY LABUBU</span>
+              </div>
+              <div class="grid gap-5 spt40px sm:grid-cols-2">
+                <div class="m-text flex items-center justify-between rounded-lg border border-black bg-transparent p-3">
+                  <p class="">Current price</p>
+                  <p class="font-bold">$0.00138</p>
+                </div>
+                <div class="m-text flex items-center justify-between rounded-lg border border-black bg-transparent p-3">
+                  <p class="">Listing Price</p>
+                  <p class="font-bold">$0.005</p>
+                </div>
+              </div>
+              <div class="smt32px">
+                <p class="m-text text-right font-bold">$1,191,568.19 / $1,600,000</p>
+                <div class="relative mt-3 h-3 w-full bg-white">
+                  <div class="relative h-3 w-3/4 bg-black">
+                    <div class="absolute left-0 h-5 w-4 -translate-y-[23%] rounded bg-black"></div>
+                    <div class="absolute right-0 h-5 w-4 -translate-y-[23%] rounded bg-black"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-3 flex items-center justify-center">
+                <div class="m-text flex items-center justify-between gap-2.5 rounded-lg bg-black p-2.5 text-[#E7FF53]">
+                  <p class=" ">Next price increase by</p>
+                  <i class="ph-fill ph-caret-down"></i>
+                  <p class="font-bold">10.14</p>
+                </div>
+              </div>
+              <div class="flex flex-wrap items-center justify-between gap-3 smt32px">
+                <div class="group flex cursor-pointer items-center gap-1 rounded border border-white/10 bg-white/10 p-2 duration-300 hover:bg-black">
+                  <img src="./assets/images/coin-icon-1.png" alt="Image" />
+                  <p class="m-text group-hover:text-[#E7FF53]">USDT</p>
+                </div>
+                <div class="group flex cursor-pointer items-center gap-1 rounded border border-white/10 bg-white/10 p-2 duration-300 hover:bg-black">
+                  <img src="./assets/images/coin-icon-2.png" alt="Image" />
+                  <p class="m-text group-hover:text-[#E7FF53]">USDC</p>
+                </div>
+
+                <div class="group flex cursor-pointer items-center gap-1 rounded border border-white/10 bg-white/10 p-2 duration-300 hover:bg-black">
+                  <img src="./assets/images/coin-icon-3.png" alt="Image" />
+                  <p class="m-text group-hover:text-[#E7FF53]">ETH</p>
+                </div>
+                <div class="group flex cursor-pointer items-center gap-1 rounded border border-white/10 bg-white/10 p-2 duration-300 hover:bg-black">
+                  <img src="./assets/images/coin-icon-4.png" alt="Image" />
+                  <p class="m-text group-hover:text-[#E7FF53]">CARD</p>
+                </div>
+                <div class="group flex cursor-pointer items-center gap-1 rounded border border-white/10 bg-white/10 p-2 duration-300 hover:bg-black">
+                  <img src="./assets/images/coin-icon-5.png" alt="Image" />
+                  <p class="m-text group-hover:text-[#E7FF53]">BNB</p>
+                </div>
+                <div class="group flex cursor-pointer items-center gap-1 rounded border border-white/10 bg-white/10 p-2 duration-300 hover:bg-black">
+                  <img src="./assets/images/coin-icon-6.png" alt="Image" />
+                  <p class="m-text group-hover:text-[#E7FF53]">MATIC</p>
+                </div>
+              </div>
+
+              <div class="grid gap-5 spt40px sm:grid-cols-2">
+                <div>
+                  <div class="m-text flex items-center justify-between gap-3">
+                    <p class="font-semibold">You send</p>
+                    <p>$ 0.00000</p>
+                  </div>
+
+                  <div class="m-text mt-2 flex items-center justify-between rounded-lg border border-black bg-transparent">
+                    <input class="w-[65%] bg-transparent p-3 placeholder:text-black" placeholder="at least 0.001" />
+                    <div class="flex items-center gap-1 pr-2">
+                      <img src="./assets/images/coin-icon-3.png" alt="Image" />
+                      <p class="m-text font-bold">USDT</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="m-text flex items-center justify-between gap-3">
+                    <p class="font-semibold">You'll receive</p>
+                  </div>
+
+                  <div class="m-text mt-2 flex items-center justify-between rounded-lg border border-black bg-transparent">
+                    <input class="w-[65%] bg-transparent p-3 placeholder:text-black" placeholder="0" />
+                    <div class="flex items-center gap-1 pr-2">
+                      <img src="./assets/images/coin-icon-5.png" alt="Image" />
+                      <p class="m-text font-bold">LHUNT</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="#" class="button-primary-black block text-center smt32px">CONNECT WALLET</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper home-2-brands container spy80px">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide my-auto w-fit">
+              <img src="./assets/images/client-1.png" alt="Client Logo" />
+            </div>
+            <div class="swiper-slide my-auto w-fit">
+              <img src="./assets/images/client-2.png" alt="Client Logo" />
+            </div>
+            <div class="swiper-slide my-auto w-fit">
+              <img src="./assets/images/client-3.png" alt="Client Logo" />
+            </div>
+            <div class="swiper-slide my-auto w-fit">
+              <img src="./assets/images/client-4.png" alt="Client Logo" />
+            </div>
+            <div class="swiper-slide my-auto w-fit">
+              <img src="./assets/images/client-5.png" alt="Client Logo" />
+            </div>
+            <div class="swiper-slide my-auto w-fit">
+              <img src="./assets/images/client-6.png" alt="Client Logo" />
+            </div>
+            <div class="swiper-slide my-auto w-fit">
+              <img src="./assets/images/client-1.png" alt="Client Logo" />
+            </div>
+            <div class="swiper-slide my-auto w-fit">
+              <img src="./assets/images/client-2.png" alt="Client Logo" />
+            </div>
+            <div class="swiper-slide my-auto w-fit">
+              <img src="./assets/images/client-3.png" alt="Client Logo" />
+            </div>
+            <div class="swiper-slide my-auto w-fit">
+              <img src="./assets/images/client-4.png" alt="Client Logo" />
+            </div>
+            <div class="swiper-slide my-auto w-fit">
+              <img src="./assets/images/client-5.png" alt="Client Logo" />
+            </div>
+            <div class="swiper-slide my-auto w-fit">
+              <img src="./assets/images/client-6.png" alt="Client Logo" />
+            </div>
+            <div class="swiper-slide my-auto w-fit">
+              <img src="./assets/images/client-1.png" alt="Client Logo" />
+            </div>
+            <div class="swiper-slide my-auto w-fit">
+              <img src="./assets/images/client-2.png" alt="Client Logo" />
+            </div>
+            <div class="swiper-slide my-auto w-fit">
+              <img src="./assets/images/client-3.png" alt="Client Logo" />
+            </div>
+            <div class="swiper-slide my-auto w-fit">
+              <img src="./assets/images/client-4.png" alt="Client Logo" />
+            </div>
+            <div class="swiper-slide my-auto w-fit">
+              <img src="./assets/images/client-5.png" alt="Client Logo" />
+            </div>
+            <div class="swiper-slide my-auto w-fit">
+              <img src="./assets/images/client-6.png" alt="Client Logo" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about us -->
+      <section class="relative bg-[#E7FF53] before:absolute before:bottom-0 before:left-0 before:h-[130px] before:w-full before:bg-[#FEF424] max-xxl:spt120px xxl:pt-[168px]" id="about">
+        <p class="overlay-text-content mx-auto text-center font-title-font text-[50px] leading-[90%] text-black sm:text-[70px] md:text-[120px] lg:text-[170px] xxl:text-[230px] 4xl:text-[300px]">ABOUT</p>
+        <div class="container">
+          <img src="./assets/images/home-2-about-coin.png" alt="Image" class="mx-auto" data-aos="fade-down" />
+          <h3 class="title-black split_anim pt-5 text-center">Welcome to LABUBU</h3>
+          <p class="m-text reveal_anim mx-auto max-w-[541px] pt-4 text-center">Our meme coin blends fun and finance—driven by community, powered by laughter, and aimed straight for the moon!</p>
+
+          <div class="flex flex-wrap items-center justify-center gap-4 spt32px lg:gap-6">
+            <a href="#contact" class="group rounded-[32px] bg-[#FEF200] px-1 py-3 duration-300 hover:bg-h1Primary2">
+              <span class="h5 rounded-full border-2 border-black bg-[#FEF200] py-2.5 font-semibold uppercase text-black duration-300 spx32px group-hover:bg-h1Primary2 group-hover:text-black">Get Started</span>
+            </a>
+
+            <a href="#faq" class="button-primary-black block text-center">LEARN MORE</a>
+          </div>
+
+          <div class="reveal_anim grid-cols-12 flex-col gap-6 smt60px max-lg:flex lg:grid">
+            <div class="col-span-5">
+              <h5 class="h6 mt-6 font-title-font">The Story Behind the Meme</h5>
+              <p class="m-text pt-4 opacity-90">Once upon a time, in the wild world of crypto, a legendary frog claimed the throne. No longer just a meme, this royal amphibian is now a symbol of fun, community, and financial freedom.</p>
+
+              <ul class="flex flex-col gap-3 pt-6 xxl:gap-4">
+                <li class="flex items-center gap-2"><i class="ph-fill ph-check-square text-[24px] text-black"></i> <span>No VCs, no big corporations, just pure meme magic!</span></li>
+                <li class="flex items-center gap-2"><i class="ph-fill ph-check-square text-[24px] text-black"></i> <span>Memes rule the internet, and so do we!</span></li>
+                <li class="flex items-center gap-2"><i class="ph-fill ph-check-square text-[24px] text-black"></i> <span>The frog doesn't hop; it leaps to greatness!</span></li>
+              </ul>
+
+              <div class="rounded-[32px] border-4 border-dashed border-black bg-transparent sp32px smt40px">
+                <h4 class="h4 font-title-font">324 % staking rewards</h4>
+                <p class="m-text pt-4">Earn massive 324% staking rewards and maximize your crypto gains with our game-changing staking system!</p>
+              </div>
+            </div>
+            <div class="col-span-7">
+              <div class="flex flex-col items-end">
+                <div class="reveal_anim flex w-[90%] items-center justify-between rounded-2xl border-4 border-black bg-[#FEF200] sp32px sm:w-[70%]" data-reveal-from="right" data-duration="3">
+                  <p class="h1 font-title-font">1996</p>
+                  <p class="m-text">Founded year</p>
+                </div>
+                <div class="reveal_anim -mt-2 flex w-[95%] items-center justify-between rounded-2xl border-4 border-black bg-black text-[#FEF200] sp32px sm:w-[80%]" data-reveal-from="right" data-duration="3.5">
+                  <p class="h1 font-title-font">5%</p>
+                  <p class="m-tect">Return on investment</p>
+                </div>
+                <div class="reveal_anim flex w-[85%] items-center justify-between rounded-2xl border-4 border-black bg-[#FEF200] sp32px sm:w-[75%]" data-reveal-from="right" data-duration="2">
+                  <p class="h1 font-title-font">2.1K</p>
+                  <p class="m-text">Satisfied customers</p>
+                </div>
+                <div class="reveal_anim -mt-2 flex w-[70%] items-center justify-between rounded-2xl border-4 border-black bg-black text-[#FEF200] sp32px sm:w-[60%]" data-reveal-from="right" data-duration="1.5">
+                  <p class="h1 font-title-font">70+</p>
+                  <p class="m-tect">Top in world</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative z-20 overflow-hidden font-title-font md:mt-[50px] lg:pb-15" data-reveal-from="right">
+          <div class="animated-text-strip text h2 -ml-11 w-[115%] translate-y-[86px] rotate-[7deg] border-2 border-h1Primary2 bg-black text-[#E7FF53] sp40px xxl:rotate-[5deg]">
+            <span class="marquee big-text">📢 Join Our Telegram & Twitter Now! </span>
+            <span class="marquee big-text">📢 Join Our Telegram & Twitter Now! </span>
+            <span class="marquee big-text">📢 Join Our Telegram & Twitter Now! </span>
+            <span class="marquee big-text">📢 Join Our Telegram & Twitter Now! </span>
+            <span class="marquee big-text">📢 Join Our Telegram & Twitter Now! </span>
+            <span class="marquee big-text">📢 Join Our Telegram & Twitter Now! </span>
+          </div>
+          <div class="animated-text-strip text h2 -ml-11 w-[115%] translate-y-[-44px] rotate-[-5deg] border-2 border-h1Primary2 bg-black text-[#E7FF53] sp40px max-md:mt-20 md:max-xl:mt-10 xxl:rotate-[-5deg]">
+            <span class="marquee-alt big-text">🚀 Don't Miss the Next 1000x Coin! </span>
+            <span class="marquee-alt big-text">🚀 Don't Miss the Next 1000x Coin!</span>
+            <span class="marquee-alt big-text">🚀 Don't Miss the Next 1000x Coin!</span>
+            <span class="marquee-alt big-text">🚀 Don't Miss the Next 1000x Coin! </span>
+            <span class="marquee-alt big-text">🚀 Don't Miss the Next 1000x Coin!</span>
+            <span class="marquee-alt big-text">🚀 Don't Miss the Next 1000x Coin!</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- How to Buy LABUBU  -->
+      <section class="bg-[#FEF537] bg-contain bg-bottom bg-no-repeat spy120px" id="how-to-buy">
+        <div class="container">
+          <h3 class="title-black split_anim text-center">How to Buy LABUBU</h3>
+          <p class="m-text reveal_anim mx-auto mt-6 max-w-[589px] text-center">Getting your hands on labubu is quick and easy! Follow these simple steps to joining our community</p>
+          <div class="spt60px">
+            <div class="grid grid-cols-1 gap-10 lg:grid-cols-3 lg:gap-6">
+              <div class="reveal_anim pt-8 lg:pt-10 xl:pt-15" data-reveal-from="left">
+                <div class="how-to-buy-2">
+                  <div class="how-to-buy-number">01</div>
+                  <img src="./assets/images/how-to-buy-2.1.png" alt="Image" />
+                  <h4 class="h4 mx-auto max-w-[250px] font-title-font text-black spt40px">Set Up a Crypto Wallet</h4>
+                  <p class="l-text mt-4 opacity-90">You'll need a cryptocurrency wallet to store and trade your labubu</p>
+                </div>
+              </div>
+              <div class="reveal_anim pt-8 lg:pt-10 xl:pt-15" data-reveal-from="left">
+                <div class="how-to-buy-2">
+                  <div class="how-to-buy-number">02</div>
+                  <img src="./assets/images/how-to-buy-2.2.png" alt="Image" />
+                  <h4 class="h4 mx-auto max-w-[250px] font-title-font text-black spt40px">Select Token and Amount</h4>
+                  <p class="l-text mt-4 opacity-90">Choose your desired token and enter the amount you wish to purchase.</p>
+                </div>
+              </div>
+              <div class="reveal_anim pt-8 lg:pt-10 xl:pt-15" data-reveal-from="right">
+                <div class="how-to-buy-2">
+                  <div class="how-to-buy-number">03</div>
+                  <img src="./assets/images/how-to-buy-2.3.png" alt="Image" />
+                  <h4 class="h4 mx-auto max-w-[250px] font-title-font text-black spt40px">Buy and Stake labubu</h4>
+                  <p class="l-text mt-4 opacity-90">Click "Buy Now" and follow the on-screen instructions from your wallet</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tokenomics  -->
+      <section class="noise relative bg-[#E7FF53] spy120px" id="tokenomics">
+        <div class="container relative">
+          <div class="text-center">
+            <h3 class="title-black split_anim">Tokenomics</h3>
+            <p class="m-text reveal_anim mx-auto max-w-[589px] pt-4 opacity-90 xl:pt-6">Discover our tokenomics: fair distribution, strong rewards, and growth potential—fueling our crypto journey!" 🚀</p>
+          </div>
+          <div class="relative flex items-center justify-center smt80px">
+            <div class="z-20 gap-5 max-xxl:grid sm:gap-10 md:grid-cols-2 md:gap-20">
+              <div class="reveal_anim -top-20 left-0 flex size-[250px] shrink-0 flex-col items-center justify-center rounded-full border-4 border-black bg-[#FEF535] xxl:absolute xxl:size-[368px]">
+                <p class="max-xxl:d2 font-semibold xxl:text-[96px]">10<span class="h2 font-medium">%</span></p>
+                <p class="lead-text pt-5 font-semibold">Airdrop, Giveaway</p>
+                <p class="l-text pt-2">(50,000,000 Tokens)</p>
+              </div>
+              <div class="reveal_anim -top-20 right-0 flex size-[250px] shrink-0 flex-col items-center justify-center rounded-full border-4 border-black bg-[#FEF535] xxl:absolute xxl:size-[368px]" data-reveal-from="right">
+                <p class="max-xxl:d2 font-semibold xxl:text-[96px]">20<span class="h2 font-medium">%</span></p>
+                <p class="lead-text pt-5 font-semibold">Staking: 20%</p>
+                <p class="l-text pt-2">(100,000,000 Tokens)</p>
+              </div>
+              <div class="reveal_anim bottom-0 left-0 flex size-[250px] shrink-0 flex-col items-center justify-center rounded-full border-4 border-black bg-[#FEF535] xxl:absolute xxl:size-[368px]" data-reveal-from="left">
+                <p class="max-xxl:d2 font-semibold xxl:text-[96px]">15<span class="h2 font-medium">%</span></p>
+                <p class="lead-text pt-5 font-semibold">Marketing</p>
+                <p class="l-text pt-2">(75,000,000 Tokens)</p>
+              </div>
+              <div class="reveal_anim bottom-0 right-0 flex size-[250px] shrink-0 flex-col items-center justify-center rounded-full border-4 border-black bg-[#FEF535] xxl:absolute xxl:size-[368px]" data-reveal-from="right">
+                <p class="max-xxl:d2 font-semibold xxl:text-[96px]">55<span class="h2 font-medium">%</span></p>
+                <p class="lead-text pt-5 font-semibold">Presale</p>
+                <p class="l-text pt-2">(200,000,000 Tokens)</p>
+              </div>
+            </div>
+
+            <img src="./assets/images/home-2-tokenomics.webp" alt="Image" class="relative max-xxl:hidden" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ROADMAP -->
+      <section class="relative bg-[#E7FF53] bg-repeat spy120px" data-bg="./assets/images/home-2-roadmap-noise.webp" id="roadmap">
+        <div class="container grid-cols-12 gap-6 overflow-clip lg:grid">
+          <div class="relative col-span-6 max-lg:hidden">
+            <div class="sticky top-[120px]">
+              <h3 class="title-black split_anim">ROADMAP</h3>
+              <div class="max-w-[441px]">
+                <p class="m-text reveal_anim">From humble beginnings to industry leaders, our story is one of passion, innovation, and unwavering dedication.</p>
+                <div class="ml-2 flex items-center smt32px">
+                  <a href="#contact" class="button-primary-black inline-block">BUY NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative col-span-7 col-start-7">
+            <div class="relative smt60px">
+              <div class="flex flex-col gap-6 text-[#EAFF6A] lg:gap-12">
+                <div class="home-2-roadmap-card relative">
+                  <div class="absolute -left-10 top-0 h-[200%] w-1 bg-black"></div>
+                  <div class="absolute -left-10 top-0 h-5 w-5 -translate-x-[7px] -translate-y-2 rounded-full bg-black outline outline-offset-2 outline-black"></div>
+                  <div class="card-content rounded-[32px] border-4 border-dashed border-h1Primary2 bg-black duration-300 sp32px">
+                    <p class="h5 flex items-center gap-2 font-semibold">📍 Phase 1</p>
+                    <h4 class="h3 pt-6 font-title-font">The Frog Awakens 🐸</h4>
+                    <div class="h-px w-full bg-[#E7FF53] smy32px"></div>
+                    <ul class="flex flex-wrap gap-x-2 gap-y-5">
+                      <li class="flex items-center justify-center gap-2"><img src="./assets/images/roadmap-star.png" alt="" /> Staking & Rewards System Implementation</li>
+                      <li class="flex items-center justify-center gap-2"><img src="./assets/images/roadmap-star.png" alt="" /> NFT Collection Launch</li>
+                      <li class="flex items-center justify-center gap-2"><img src="./assets/images/roadmap-star.png" alt="" /> Merch & Meme Store</li>
+                      <li class="flex items-center justify-center gap-2"><img src="./assets/images/roadmap-star.png" alt="" /> Charity & Community Initiatives</li>
+                      <li class="flex items-center justify-center gap-2"><img src="./assets/images/roadmap-star.png" alt="" /> Trending on Crypto Twitter</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="home-2-roadmap-card relative">
+                  <div class="absolute -left-10 top-0 h-[200%] w-1 bg-black"></div>
+                  <div class="absolute -left-10 top-0 h-5 w-5 -translate-x-[7px] -translate-y-2 rounded-full bg-black outline outline-offset-2 outline-black"></div>
+                  <div class="card-content rounded-[32px] border-4 border-dashed border-h1Primary2 bg-black duration-300 sp32px" data-reveal-from="right">
+                    <p class="h5 flex items-center gap-2 font-semibold">📍 Phase 2</p>
+                    <h4 class="h3 pt-6 font-title-font">The Hop Forward 🚀</h4>
+                    <div class="h-px w-full bg-[#E7FF53] smy32px"></div>
+                    <ul class="flex flex-wrap gap-x-2 gap-y-5">
+                      <li class="flex items-center justify-center gap-2"><img src="./assets/images/roadmap-star.png" alt="" /> CoinGecko & CoinMarketCap Listings</li>
+                      <li class="flex items-center justify-center gap-2"><img src="./assets/images/roadmap-star.png" alt="" /> First Exchange Listing</li>
+                      <li class="flex items-center justify-center gap-2"><img src="./assets/images/roadmap-star.png" alt="" />10,000+ Holders Milestone</li>
+                      <li class="flex items-center justify-center gap-2"><img src="./assets/images/roadmap-star.png" alt="" /> Meme Contests & Community Giveaways</li>
+                      <li class="flex items-center justify-center gap-2"><img src="./assets/images/roadmap-star.png" alt="" /> Partnerships & Collaborations</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="home-2-roadmap-card">
+                  <div class="absolute -left-10 top-0 h-[200%] w-1 bg-black"></div>
+                  <div class="absolute -left-10 top-0 h-5 w-5 -translate-x-[7px] -translate-y-2 rounded-full bg-black outline outline-offset-2 outline-black"></div>
+                  <div class="card-content rounded-[32px] border-4 border-dashed border-h1Primary2 bg-black duration-300 sp32px">
+                    <p class="h5 flex items-center gap-2 font-semibold">📍 Phase 3</p>
+                    <h4 class="h3 pt-6 font-title-font">The Royal Leap 👑</h4>
+                    <div class="h-px w-full bg-[#E7FF53] smy32px"></div>
+                    <ul class="flex flex-wrap gap-x-2 gap-y-5">
+                      <li class="flex items-center justify-center gap-2"><img src="./assets/images/roadmap-star.png" alt="" /> CoinGecko & CoinMarketCap Listings</li>
+                      <li class="flex items-center justify-center gap-2"><img src="./assets/images/roadmap-star.png" alt="" /> First Exchange Listing</li>
+                      <li class="flex items-center justify-center gap-2"><img src="./assets/images/roadmap-star.png" alt="" />10,000+ Holders Milestone</li>
+                      <li class="flex items-center justify-center gap-2"><img src="./assets/images/roadmap-star.png" alt="" /> Meme Contests & Community Giveaways</li>
+                      <li class="flex items-center justify-center gap-2"><img src="./assets/images/roadmap-star.png" alt="" /> Partnerships & Collaborations</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="home-2-roadmap-card">
+                  <div class="absolute -left-10 top-0 h-[200%] w-1 bg-black"></div>
+                  <div class="absolute -left-10 top-0 h-5 w-5 -translate-x-[7px] -translate-y-2 rounded-full bg-black outline outline-offset-2 outline-black"></div>
+                  <div class="card-content rounded-[32px] border-4 border-dashed border-h1Primary2 bg-black duration-300 sp32px" data-reveal-from="right">
+                    <p class="h5 flex items-center gap-2 font-semibold">📍 Phase 4</p>
+                    <h4 class="h3 pt-6 font-title-font">The Meme Empire 🌕</h4>
+                    <div class="h-px w-full bg-[#E7FF53] smy32px"></div>
+                    <ul class="flex flex-wrap gap-x-2 gap-y-5">
+                      <li class="flex items-center justify-center gap-2"><img src="./assets/images/roadmap-star.png" alt="" /> Major CEX Listings (Binance, KuCoin, etc.)</li>
+                      <li class="flex items-center justify-center gap-2"><img src="./assets/images/roadmap-star.png" alt="" /> Frogverse Metaverse Development 🏰</li>
+                      <li class="flex items-center justify-center gap-2"><img src="./assets/images/roadmap-star.png" alt="" /> Play-to-Earn Game Launch 🎮</li>
+                      <li class="flex items-center justify-center gap-2"><img src="./assets/images/roadmap-star.png" alt="" /> Global Meme Domination!</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Faq -->
+      <section class="relative bg-[#FEF200] spy120px" id="faq">
+        <div>
+          <h3 class="title-black text-center">FAQ</h3>
+          <p class="section-text mx-auto max-w-[467px] text-center">Got questions? We've got answers! Explore our FAQs to learn all about our meme coin adventure." 🚀💡</p>
+        </div>
+        <div class="container grid-cols-12 flex-col-reverse smt60px max-lg:flex max-lg:items-center lg:grid">
+          <div class="col-span-7 xxl:col-span-6">
+            <div class="reveal_anim flex flex-col gap-4">
+              <!-- single faq -->
+              <div class="appear-downd rounded-2xl border-4 border-dashed border-transparent bg-black p-4 text-[#E7FF53] sm:p-6">
+                <div class="faq-accordion-2 flex cursor-pointer items-center justify-between gap-2 duration-300 sm:gap-6">
+                  <div class="flex items-center gap-4">
+                    <h6 class="lead-text font-bold">1. What is labubu?</h6>
+                  </div>
+                  <div class="bg-primary flex size-8 shrink-0 items-center justify-center rounded-full leading-none duration-300">
+                    <i class="ph-fill ph-caret-down text-[24px] duration-300"></i>
+                  </div>
+                </div>
+                <div class="h-0 overflow-hidden duration-300">
+                  <p class="l-text mt-4 opacity-80">We understand the importance of preserving our natural resources, and that is why we have invested in that minimize water consumption without compromising the quality of the wash.</p>
+                </div>
+              </div>
+              <!-- single faq -->
+              <div class="appear-downd rounded-2xl border-4 border-dashed border-transparent bg-black p-4 text-[#E7FF53] sm:p-6">
+                <div class="faq-accordion-2 flex cursor-pointer items-center justify-between gap-2 duration-300 sm:gap-6">
+                  <div class="flex items-center gap-4">
+                    <h6 class="lead-text font-bold">2. Is labubu safe to invest in?</h6>
+                  </div>
+                  <div class="bg-primary flex size-8 shrink-0 items-center justify-center rounded-full leading-none duration-300">
+                    <i class="ph-fill ph-caret-down text-[24px] duration-300"></i>
+                  </div>
+                </div>
+                <div class="h-0 overflow-hidden duration-300">
+                  <p class="l-text mt-4 opacity-80">We understand the importance of preserving our natural resources, and that is why we have invested in that minimize water consumption without compromising the quality of the wash.</p>
+                </div>
+              </div>
+              <!-- single faq -->
+              <div class="appear-downd rounded-2xl border-4 border-dashed border-transparent bg-black p-4 text-[#E7FF53] sm:p-6">
+                <div class="faq-accordion-2 flex cursor-pointer items-center justify-between gap-2 duration-300 sm:gap-6">
+                  <div class="flex items-center gap-4">
+                    <h6 class="lead-text font-bold">3. Is there a roadmap for future developments?</h6>
+                  </div>
+                  <div class="bg-primary flex size-8 shrink-0 items-center justify-center rounded-full leading-none duration-300">
+                    <i class="ph-fill ph-caret-down text-[24px] duration-300"></i>
+                  </div>
+                </div>
+                <div class="h-0 overflow-hidden duration-300">
+                  <p class="l-text mt-4 opacity-80">We understand the importance of preserving our natural resources, and that is why we have invested in that minimize water consumption without compromising the quality of the wash.</p>
+                </div>
+              </div>
+              <!-- single faq -->
+              <div class="appear-downd rounded-2xl border-4 border-dashed border-transparent bg-black p-4 text-[#E7FF53] sm:p-6">
+                <div class="faq-accordion-2 flex cursor-pointer items-center justify-between gap-2 duration-300 sm:gap-6">
+                  <div class="flex items-center gap-4">
+                    <h6 class="lead-text font-bold">4. How do I contact support?</h6>
+                  </div>
+                  <div class="bg-primary flex size-8 shrink-0 items-center justify-center rounded-full leading-none duration-300">
+                    <i class="ph-fill ph-caret-down text-[24px] duration-300"></i>
+                  </div>
+                </div>
+                <div class="h-0 overflow-hidden duration-300">
+                  <p class="l-text mt-4 opacity-80">We understand the importance of preserving our natural resources, and that is why we have invested in that minimize water consumption without compromising the quality of the wash.</p>
+                </div>
+              </div>
+              <!-- single faq -->
+              <div class="appear-downd rounded-2xl border-4 border-dashed border-transparent bg-black p-4 text-[#E7FF53] sm:p-6">
+                <div class="faq-accordion-2 flex cursor-pointer items-center justify-between gap-2 duration-300 sm:gap-6">
+                  <div class="flex items-center gap-4">
+                    <h6 class="lead-text font-bold">5. How can I join the labubu community?</h6>
+                  </div>
+                  <div class="bg-primary flex size-8 shrink-0 items-center justify-center rounded-full leading-none duration-300">
+                    <i class="ph-fill ph-caret-down text-[24px] duration-300"></i>
+                  </div>
+                </div>
+                <div class="h-0 overflow-hidden duration-300">
+                  <p class="l-text mt-4 opacity-80">We understand the importance of preserving our natural resources, and that is why we have invested in that minimize water consumption without compromising the quality of the wash.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reveal_anim col-span-5 col-start-8 max-lg:hidden" data-reveal-from="right">
+            <img src="./assets/images/home-2-faq-coin.png" alt="Image" class="max-lg:max-w-[350px]" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-[#E7FF53] spt120px">
+        <div class="custom-container relative z-10 rounded-[60px] bg-black">
+          <img src="./assets/images/home-2-footer-image.webp" alt="Image" class="absolute -top-18 left-20 z-[1] max-xl:hidden" />
+          <h3 class="split_anim text-center font-title-font text-[50px] uppercase leading-[90%] text-[#E7FF53] sm:text-[70px] md:text-[120px] lg:text-[170px] xxl:text-[230px] 4xl:text-[300px]">LABUBU</h3>
+          <div class="grid-cols-12 gap-6 text-[#E7FF53] spx80px md:grid">
+            <div class="col-span-3 spb40px spt60px">
+              <img src="./assets/images/home-2-footer-logo.png" alt="Image" />
+              <p class="m-text mt-4 text-[#E7FF53]">The value of cryptocurrencies may fluctuate Profits may be subject to capital gains or other taxes applicable in your jurisdiction</p>
+              <div class="mt-6 flex items-center gap-3">
+                <a href="#" class="group flex cursor-pointer items-center justify-center rounded-full bg-white/10 p-2.5 duration-300 hover:bg-h1Primary2"> <i class="ph-fill ph-facebook-logo text-[20px] text-h1Primary2 group-hover:text-black"></i> </a>
+                <a href="#" class="group flex cursor-pointer items-center justify-center rounded-full bg-white/10 p-2.5 duration-300 hover:bg-h1Primary2"> <i class="ph-fill ph-instagram-logo text-[20px] text-h1Primary2 group-hover:text-black"></i> </a>
+                <a href="#" class="group flex cursor-pointer items-center justify-center rounded-full bg-white/10 p-2.5 duration-300 hover:bg-h1Primary2"> <i class="ph-fill ph-twitter-logo text-[20px] text-h1Primary2 group-hover:text-black"></i> </a>
+                <a href="#" class="group flex cursor-pointer items-center justify-center rounded-full bg-white/10 p-2.5 duration-300 hover:bg-h1Primary2"> <i class="ph-fill ph-linkedin-logo text-[20px] text-h1Primary2 group-hover:text-black"></i> </a>
+              </div>
+            </div>
+            <div class="relative col-span-2 spb40px spt60px">
+              <div class="md:mx-auto md:w-fit">
+                <h3 class="h5 font-title-font text-[#E7FF53]">Quick Links</h3>
+                <ul class="mt-6 flex flex-col gap-3">
+                  <li>
+                    <a href="#" class="m-text flex items-center gap-1 text-[#E7FF53] duration-300 hover:text-white"><img src="./assets/images/star-small.png" alt="Footer Menu Star" /> <span>Home</span></a>
+                  </li>
+                  <li>
+                    <a href="#about" class="m-text flex items-center gap-1 text-[#E7FF53] duration-300 hover:text-white"><img src="./assets/images/star-small.png" alt="Footer Menu Star" /> <span>About</span></a>
+                  </li>
+                  <li>
+                    <a href="#roadmap" class="m-text flex items-center gap-1 text-[#E7FF53] duration-300 hover:text-white"><img src="./assets/images/star-small.png" alt="Footer Menu Star" /> <span>Roadmap</span></a>
+                  </li>
+                  <li>
+                    <a href="#tokenomics" class="m-text flex items-center gap-1 text-[#E7FF53] duration-300 hover:text-white"><img src="./assets/images/star-small.png" alt="Footer Menu Star" /> <span>Tokenomics</span></a>
+                  </li>
+                  <li>
+                    <a href="#how-to-buy" class="m-text flex items-center gap-1 text-[#E7FF53] duration-300 hover:text-white"><img src="./assets/images/star-small.png" alt="Footer Menu Star" /> <span>How to Buy</span></a>
+                  </li>
+                  <li>
+                    <a href="#contact" class="m-text flex items-center gap-1 text-[#E7FF53] duration-300 hover:text-white"><img src="./assets/images/star-small.png" alt="Footer Menu Star" /> <span>Contact</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-span-3 spb40px spt60px">
+              <div class="md:mx-auto md:w-fit">
+                <h3 class="h5 font-title-font">CONTACT</h3>
+                <ul class="mt-6 flex flex-col gap-6">
+                  <li>
+                    <a href="#" class="m-text flex items-center gap-2"><i class="ph ph-map-pin text-[24px]"></i><span>California L.A 57867</span></a>
+                  </li>
+                  <li>
+                    <a href="#" class="m-text flex items-center gap-2"><i class="ph ph-phone-call text-[24px]"></i><span>(808) 555-0111</span></a>
+                  </li>
+                  <li>
+                    <a href="#" class="m-text flex items-center gap-2"><i class="ph ph-envelope-simple-open text-[24px]"></i><span>info.zenspa@gmail.com</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-span-4">
+              <h5 class="h5 max-w-[296px] font-title-font text-h1Primary2 smt60px">SUBSCRIBE OUR NEWSLETTER</h5>
+              <div class="flex max-w-[400px] items-center justify-between rounded-lg border border-white/10 bg-white/5 smt32px">
+                <input type="text" placeholder="Enter your email" class="w-full bg-transparent px-2" /> <button class="m-text bordeer h-full rounded-lg border-transparent bg-h1Primary2 py-4 text-center font-medium text-[#005308] duration-300 spx32px placeholder:text-white hover:border-h1Primary">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-0.5 w-full bg-[linear-gradient(90deg,rgba(227,255,16,0.00)_5%,#E3FF10_50.59%,rgba(227,255,16,0.00)_95%)]"></div>
+        <div class="custom-container flex flex-wrap items-center justify-center gap-4 py-6 sm:justify-between">
+          <p class="m-text">© labubu 2025. All rights reserved.</p>
+          <div class="flex items-center gap-6">
+            <a href="#" class="m-text duration-300 hover:text-h1Primary2">Privacy policy</a>
+            <a href="#" class="m-text duration-300 hover:text-h1Primary2">Terms of use</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ Phosphor Icons ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <!-- ============ gsap js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <!-- =========== gsap ScrollTrigger js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
