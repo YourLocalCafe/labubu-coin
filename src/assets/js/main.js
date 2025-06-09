@@ -59,7 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  scrollTopButton && scrollTopButton.addEventListener("click", handleProgressClick);
+  scrollTopButton &&
+    scrollTopButton.addEventListener("click", handleProgressClick);
 
   const bgImages = document.querySelectorAll("[data-bg]");
   if (bgImages.length) {
@@ -85,14 +86,56 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (scrollHeight > 100) {
       desktopNav?.classList.remove("bg-transparent");
-      desktopNav?.classList.add("fixed", "left-0", "top-0", "w-full", "bg-secondary", "duration-300");
+      desktopNav?.classList.add(
+        "fixed",
+        "left-0",
+        "top-0",
+        "w-full",
+        "bg-secondary",
+        "duration-300"
+      );
       desktopNav2?.classList.remove("bg-transparent");
-      desktopNav2?.classList.add("fixed", "left-0", "top-0", "w-full", "bg-[#FEF200]", "duration-300");
+      desktopNav2?.classList.add(
+        "fixed",
+        "left-0",
+        "top-0",
+        "w-full",
+        "bg-[#FEF200]",
+        "duration-300"
+      );
     } else {
-      desktopNav?.classList.remove("fixed", "left-0", "top-0", "w-full", "bg-secondary", "duration-300");
-      desktopNav?.classList.add("fixed", "left-0", "top-0", "w-full", "bg-transparent", "duration-300");
-      desktopNav2?.classList.remove("fixed", "left-0", "top-0", "w-full", "bg-[#FEF200]", "duration-300");
-      desktopNav2?.classList.add("fixed", "left-0", "top-0", "w-full", "bg-transparent", "duration-300");
+      desktopNav?.classList.remove(
+        "fixed",
+        "left-0",
+        "top-0",
+        "w-full",
+        "bg-secondary",
+        "duration-300"
+      );
+      desktopNav?.classList.add(
+        "fixed",
+        "left-0",
+        "top-0",
+        "w-full",
+        "bg-transparent",
+        "duration-300"
+      );
+      desktopNav2?.classList.remove(
+        "fixed",
+        "left-0",
+        "top-0",
+        "w-full",
+        "bg-[#FEF200]",
+        "duration-300"
+      );
+      desktopNav2?.classList.add(
+        "fixed",
+        "left-0",
+        "top-0",
+        "w-full",
+        "bg-transparent",
+        "duration-300"
+      );
     }
   });
 
@@ -114,15 +157,24 @@ document.addEventListener("DOMContentLoaded", function () {
   overlay?.addEventListener("click", toggleMenu);
 
   // Mobile submenu functionality
-  const mobileSubmenuButtons = document.querySelectorAll("#mobileMenu .w-full > button");
+  const mobileSubmenuButtons = document.querySelectorAll(
+    "#mobileMenu .w-full > button"
+  );
   mobileSubmenuButtons.forEach((button) => {
     button.addEventListener("click", function () {
       const submenu = this.nextElementSibling;
       const icon = this.querySelector("i");
-      submenu.style.display = submenu.style.display === "none" ? "block" : "none";
+      submenu.style.display =
+        submenu.style.display === "none" ? "block" : "none";
       icon.classList.toggle("ti-plus");
       icon.classList.toggle("ti-minus");
     });
+  });
+
+  // Collapsing the menu on click
+  const sideBtns = document.querySelectorAll("#sidenav-buttons a");
+  sideBtns.forEach((btn) => {
+    btn.addEventListener("click", toggleMenu);
   });
 
   /**
@@ -173,8 +225,10 @@ document.addEventListener("DOMContentLoaded", function () {
           otherAccordion.classList.remove("pb-6");
           otherAccordion.querySelector("i").classList.remove("-rotate-180");
           otherAccordion.querySelector("div").classList.remove("border-accent");
-          otherAccordion.querySelector("div").classList.add("border-transparent");
-          otherAccordion.parentElement.classList.remove("!border-h1Primary2");
+          otherAccordion
+            .querySelector("div")
+            .classList.add("border-transparent");
+          otherAccordion.parentElement.classList.remove("!border-accent");
         }
       });
 
@@ -206,14 +260,21 @@ document.addEventListener("DOMContentLoaded", function () {
           otherAccordion.classList.remove("text-primary");
           otherAccordion.classList.remove("pb-6");
           otherAccordion.querySelector("i").classList.remove("-rotate-180");
-          otherAccordion.querySelector("div").classList.remove("border-h1Primary2");
-          otherAccordion.querySelector("div").classList.add("border-transparent");
+          otherAccordion
+            .querySelector("div")
+            .classList.remove("border-h1Primary2");
+          otherAccordion
+            .querySelector("div")
+            .classList.add("border-transparent");
           otherAccordion.parentElement.classList.remove("!border-h1Primary2");
           otherAccordion.parentElement.classList.remove("!bg-[#E7FF53]");
           otherAccordion.classList.remove("!text-black");
           otherFaqAnswer.classList.remove("!text-black");
         } else {
-          accordion2[index].parentElement.classList.add("!border-black", "!bg-[#E7FF53]");
+          accordion2[index].parentElement.classList.add(
+            "!border-black",
+            "!bg-[#E7FF53]"
+          );
           accordion2[index].classList.add("!text-black");
           faqAnswer.classList.add("!text-black");
         }
@@ -246,8 +307,12 @@ document.addEventListener("DOMContentLoaded", function () {
           otherAccordion.classList.remove("text-primary");
           otherAccordion.classList.remove("pb-6");
           otherAccordion.querySelector("i").classList.remove("-rotate-180");
-          otherAccordion.querySelector("div").classList.remove("border-h1Primary2");
-          otherAccordion.querySelector("div").classList.add("border-transparent");
+          otherAccordion
+            .querySelector("div")
+            .classList.remove("border-h1Primary2");
+          otherAccordion
+            .querySelector("div")
+            .classList.add("border-transparent");
           otherAccordion.parentElement.classList.remove("!border-h1Primary2");
           otherAccordion.parentElement.classList.remove("!bg-[#E7FF53]");
           otherAccordion.parentElement.classList.remove("!border-[#98FF38]");
@@ -293,8 +358,13 @@ function splitTextAnimation(selector) {
           })
           .join("");
 
-        const wordWrapper = `<span class="word-span" style="display:inline-block;white-space:nowrap;">` + lettersHTML + `</span>`;
-        return wordIndex < words.length - 1 ? wordWrapper + "&nbsp;" : wordWrapper;
+        const wordWrapper =
+          `<span class="word-span" style="display:inline-block;white-space:nowrap;">` +
+          lettersHTML +
+          `</span>`;
+        return wordIndex < words.length - 1
+          ? wordWrapper + "&nbsp;"
+          : wordWrapper;
       })
       .join("");
     const letters = item.querySelectorAll(".letter-span");

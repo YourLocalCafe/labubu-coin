@@ -55,12 +55,12 @@
       <!-- Mobile Menu -->
       <div id="mobileMenu" class="fixed left-0 top-0 z-[33] h-full w-3/4 -translate-x-[120%] overflow-y-auto bg-secondary pb-4 shadow-2xl duration-700 ease-in-out xl:hidden">
         <div class="flex items-center justify-between px-6 py-4">
-          <img src="./assets/images/Labubu-Logo-White.png" width="172" height="47" alt="logo" />
+          <img src="./assets/images/Labubu-Logo-White.png" class="h-[30px] w-auto" alt="logo" />
           <button id="closeMenu" aria-label="mobile menu close" class="cursor-pointer text-accent">
             <i class="ph ph-x text-[24px]"></i>
           </button>
         </div>
-        <ul class="flex flex-col gap-2 px-3">
+        <ul id="sidenav-buttons" class="flex flex-col gap-2 px-3">
           <!-- Home -->
           <li class="w-full">
             <a href="/" class="inline-flex px-3 py-2 text-accent">Home</a>
@@ -118,9 +118,9 @@
           <img src="./assets/images/banner-1-coin-big.webp" alt="Image" class="absolute right-20 top-20 animate-spin-slow max-xxl:w-[50%] max-xl:hidden" />
           <div class="relative z-10 grid-cols-2 flex-col-reverse items-center from-current pt-[142px] max-md:flex max-md:gap-10 md:grid">
             <div>
-              <h1 class="d1 landing-1-banner-title font-title-font">Labubu King</h1>
-              <p class="l-text reveal_anim mt-6 max-w-[570px] text-primary" data-reveal-from="left">Labubu – The Funniest Coin on the Blockchain! Join the Hype, Trade, and Meme to the Moon!</p>
-              <div class="flex items-center gap-4 spt32px">
+              <h1 class="d1 landing-1-banner-title font-title-font max-sm:text-center">Labubu King</h1>
+              <p class="l-text reveal_anim mt-6 max-w-[570px] text-primary text-center md:text-left" data-reveal-from="left">Labubu – The Funniest Coin on the Blockchain! Join the Hype, Trade, and Meme to the Moon!</p>
+              <div class="flex items-center max-md:justify-center gap-4 spt32px">
                 <a href="#contact" class="button-primary">Buy Now</a>
                 <a href="#tokenomics" class="group rounded-[32px] px-1 py-3 duration-300">
                   <span class="h5 rounded-full border-2 border-accent bg-secondary py-2.5 font-semibold uppercase text-primary duration-300 spx32px group-hover:bg-accent group-hover:text-secondary">Learn More</span>
@@ -153,7 +153,7 @@
       </div>
 
       <!-- How to Buy LABUBU  -->
-      <section class="home-1-how-to-buy relative bg-[#743F33] bg-bottom bg-no-repeat spy120px" id="how-to-buy">
+      <section class="home-1-how-to-buy relative bg-[#743F33] bg-bottom bg-no-repeat spy120px px-[10px]" id="how-to-buy">
         <div class="container relative z-10">
           <h3 class="title text-center">How to Buy Labubu</h3>
           <p class="xl-text reveal_anim mx-auto mt-6 max-w-[589px] text-center text-primary" data-reveal-from="right">Getting your hands on labubu is quick and easy! Follow these simple steps to joining our community</p>
@@ -192,29 +192,29 @@
       </section>
 
       <!-- Welcome to LABUBU -->
-      <section class="relative bg-cover spy120px before:absolute before:inset-0 before:z-20 before:h-full before:w-full before:bg-[#743f33]/60 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#743f33] after:opacity-80" data-bg="./assets/images/welcome-bg.webp" id="about">
+      <section class="relative bg-cover spy120px before:absolute before:inset-0 before:z-20 before:h-full before:w-full before:bg-[#743f33]/60 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#743f33] after:opacity-80 px-[10px]" data-bg="./assets/images/welcome-bg.webp" id="about">
         <div class="container relative z-20 grid-cols-12 flex-col items-center gap-6 max-lg:flex lg:grid">
           <div class="relative col-span-6" data-aos="fade-right">
             <img src="./assets/images/home-1-welcome-light-top.webp" alt="Image" class="absolute left-0 top-0 animate-spin-slow" />
             <img src="./assets/images/home-1-welcome-light-bottom.webp" alt="Image" class="absolute bottom-0 left-0 blur-md" />
-            <img src="./assets/images/toy 3.png" alt="Welcome Image" class="relative z-10" />
+            <img src="./assets/images/toy 3.png" alt="Welcome Image" class="relative z-10 max-lg:h-[400px] w-auto" />
           </div>
           <div class="col-span-5 col-start-7">
-            <h3 class="title">Welcome to Labubu</h3>
-            <h5 class="h6 split_anim mt-6 font-title-font text-primary">The Story Behind the Meme</h5>
-            <p class="m-text reveal_anim pt-4 text-primary opacity-90">
+            <h3 class="title max-lg:text-center">Welcome to Labubu</h3>
+            <h5 class="h6 split_anim mt-6 font-title-font text-primary max-lg:text-center">The Story Behind the Meme</h5>
+            <p class="m-text reveal_anim pt-4 text-primary opacity-90 max-lg:text-justify">
               Once upon a time, in the wild world of crypto, a mischievous little creature named Labubu leapt into the spotlight. Inspired by the beloved Labubu doll, this quirky icon has transformed from collectible cuteness into a symbol of fun, unity, and financial freedom. Labubu Coin isn’t just a token—it’s a movement powered by charm,
               creativity, and community spirit.
             </p>
 
-            <ul class="reveal_anim flex flex-col gap-3 pt-6 xxl:gap-4">
-              <li class="flex items-center gap-2"><i class="ph-fill ph-check-square text-[24px] text-accent"></i> <span class="text-primary">No VCs, no big corporations, just pure meme magic!</span></li>
-              <li class="flex items-center gap-2"><i class="ph-fill ph-check-square text-[24px] text-accent"></i> <span class="text-primary">Memes rule the internet, and so do we!</span></li>
-              <li class="flex items-center gap-2"><i class="ph-fill ph-check-square text-[24px] text-accent"></i> <span class="text-primary">Labubu doesn’t just play—it pounces toward greatness!</span></li>
+            <ul class="reveal_anim flex flex-col gap-3 pt-6 xxl:gap-4 max-lg:ml-2">
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check-square text-[24px] text-accent self-start"></i> <span class="text-primary">No VCs, no big corporations, just pure meme magic!</span></li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check-square text-[24px] text-accent self-start"></i> <span class="text-primary">Memes rule the internet, and so do we!</span></li>
+              <li class="flex items-center gap-2"><i class="ph-fill ph-check-square text-[24px] text-accent self-start"></i> <span class="text-primary">Labubu doesn’t just play—it pounces toward greatness!</span></li>
             </ul>
 
-            <div class="spt40px">
-              <a href="#contact" class="button-primary justify-self-center">Buy Labubu</a>
+            <div class="spt40px max-lg:flex max-lg:justify-center">
+              <a href="#contact" class="button-primary">Buy Labubu</a>
             </div>
             <div class="reveal_anim rounded-[32px] border-4 border-dashed border-[#ffbf00] bg-[rgba(255,255,255,0.10)] sp32px smt60px">
               <h4 class="h4 font-title-font text-primary">324 % staking rewards</h4>
@@ -225,11 +225,11 @@
       </section>
 
       <!-- Tokenomics  -->
-      <section class="relative bg-top bg-no-repeat spy120px after:absolute after:left-0 after:top-0 after:z-[-1] after:h-full after:w-full after:bg-[#743f33]" data-bg="./assets/images/tokenomics-bg.webp" id="tokenomics">
+      <section class="relative bg-top bg-no-repeat spy120px after:absolute after:left-0 after:top-0 after:z-[-1] after:h-full after:w-full after:bg-[#743f33] px-[10px]" data-bg="./assets/images/tokenomics-bg.webp" id="tokenomics">
         <div class="container relative">
           <div class="text-center">
             <h3 class="title split_anim">Tokenomics</h3>
-            <p class="m-text reveal_anim mx-auto max-w-[589px] pt-4 text-primary opacity-90 xl:pt-6" data-reveal-from="right">Discover our tokenomics: fair distribution, strong rewards, and growth potential—fueling our crypto journey!" 🚀</p>
+            <p class="m-text reveal_anim mx-auto max-w-[589px] pt-4 text-primary opacity-90 xl:pt-6" data-reveal-from="right">Discover our tokenomics: fair distribution, strong rewards, and growth potential—fueling our crypto journey! 🚀</p>
           </div>
 
           <div class="relative flex items-center gap-6 smt120px max-md:flex-col xxl:justify-center">
@@ -327,7 +327,7 @@
       </section>
 
       <!-- ROADMAP -->
-      <section class="relative bg-top bg-no-repeat spy120px after:absolute after:left-0 after:top-0 after:z-[-1] after:h-full after:w-full after:bg-[#743f33]" data-bg="./assets/images/roadmap-bg.webp" id="roadmap">
+      <section class="relative bg-top bg-no-repeat spy120px after:absolute after:left-0 after:top-0 after:z-[-1] after:h-full after:w-full after:bg-[#743f33] px-[10px]" data-bg="./assets/images/roadmap-bg.webp" id="roadmap">
         <img src="./assets/images/home-1-roadmap-element.webp" alt="Image" class="spin-move absolute right-10 top-40 max-xxl:hidden" />
         <div class="container grid-cols-12 gap-6 lg:grid">
           <div class="reveal_anim col-span-3 max-lg:hidden" data-reveal-from="top">
@@ -343,8 +343,8 @@
             </div>
             <div class="flex flex-col gap-6 lg:gap-12">
               <div class="reveal_anim rounded-[32px] border-4 border-[rgba(255,255,255,0.10)] bg-[rgba(255,255,255,0.10)] duration-300 sp32px hover:border-4 hover:border-dashed hover:border-accent">
-                <p class="h5 flex items-center gap-2 font-semibold text-primary">📍 Phase 1</p>
-                <h4 class="h3 pt-6 font-title-font text-primary">Labubu Rises 🌟</h4>
+                <p class="h5 flex items-center gap-2 font-semibold text-secondary">📍 Phase 1</p>
+                <h4 class="h3 pt-6 font-title-font text-secondary">Labubu Rises 🌟</h4>
                 <ul class="flex flex-wrap gap-x-2 gap-y-5 smt80px">
                   <li class="flex items-center justify-center gap-2 text-primary"><img src="./assets/images/roadmap-star.png" alt="" /> Staking & Rewards System Implementation</li>
                   <li class="flex items-center justify-center gap-2 text-primary"><img src="./assets/images/roadmap-star.png" alt="" /> NFT Collection Launch</li>
@@ -354,8 +354,8 @@
                 </ul>
               </div>
               <div class="reveal_anim rounded-[32px] border-4 border-[rgba(255,255,255,0.10)] bg-[rgba(255,255,255,0.10)] duration-300 sp32px hover:border-4 hover:border-dashed hover:border-accent" data-reveal-from="right">
-                <p class="h5 flex items-center gap-2 font-semibold text-primary">📍 Phase 2</p>
-                <h4 class="h3 pt-6 font-title-font text-primary">The Labubu Launch 🚀</h4>
+                <p class="h5 flex items-center gap-2 font-semibold text-secondary">📍 Phase 2</p>
+                <h4 class="h3 pt-6 font-title-font text-secondary">The Labubu Launch 🚀</h4>
                 <ul class="flex flex-wrap gap-x-2 gap-y-5 smt80px">
                   <li class="flex items-center justify-center gap-2 text-primary"><img src="./assets/images/roadmap-star.png" alt="" /> CoinGecko & CoinMarketCap Listings</li>
                   <li class="flex items-center justify-center gap-2 text-primary"><img src="./assets/images/roadmap-star.png" alt="" /> First Exchange Listing</li>
@@ -365,8 +365,8 @@
                 </ul>
               </div>
               <div class="reveal_anim rounded-[32px] border-4 border-[rgba(255,255,255,0.10)] bg-[rgba(255,255,255,0.10)] duration-300 sp32px hover:border-4 hover:border-dashed hover:border-accent" data-reveal-from="left">
-                <p class="h5 flex items-center gap-2 font-semibold text-primary">📍 Phase 3</p>
-                <h4 class="h3 pt-6 font-title-font text-primary">The Mischief Ascends 👑</h4>
+                <p class="h5 flex items-center gap-2 font-semibold text-secondary">📍 Phase 3</p>
+                <h4 class="h3 pt-6 font-title-font text-secondary">The Mischief Ascends 👑</h4>
                 <ul class="flex flex-wrap gap-x-2 gap-y-5 smt80px">
                   <li class="flex items-center justify-center gap-2 text-primary"><img src="./assets/images/roadmap-star.png" alt="" /> CoinGecko & CoinMarketCap Listings</li>
                   <li class="flex items-center justify-center gap-2 text-primary"><img src="./assets/images/roadmap-star.png" alt="" /> First Exchange Listing</li>
@@ -376,8 +376,8 @@
                 </ul>
               </div>
               <div class="reveal_anim rounded-[32px] border-4 border-[rgba(255,255,255,0.10)] bg-[rgba(255,255,255,0.10)] duration-300 sp32px hover:border-4 hover:border-dashed hover:border-accent" data-reveal-from="right">
-                <p class="h5 flex items-center gap-2 font-semibold text-primary">📍 Phase 4</p>
-                <h4 class="h3 pt-6 font-title-font text-primary">The Meme Empire 🌕</h4>
+                <p class="h5 flex items-center gap-2 font-semibold text-secondary">📍 Phase 4</p>
+                <h4 class="h3 pt-6 font-title-font text-secondary">The Meme Empire 🌕</h4>
                 <ul class="flex flex-wrap gap-x-2 gap-y-5 smt80px">
                   <li class="flex items-center justify-center gap-2 text-primary"><img src="./assets/images/roadmap-star.png" alt="" /> Major CEX Listings (Binance, KuCoin, etc.)</li>
                   <li class="flex items-center justify-center gap-2 text-primary"><img src="./assets/images/roadmap-star.png" alt="" /> Labubu World Metaverse in the Making 🏰</li>
@@ -391,11 +391,11 @@
       </section>
 
       <!-- Faq -->
-      <section class="relative bg-cover bg-top bg-no-repeat spy120px after:absolute after:left-0 after:top-0 after:z-[-1] after:h-full after:w-full after:bg-[#743f33]" data-bg="./assets/images/home-1-faq-pattern.webp" id="faq">
+      <section class="relative bg-cover bg-top bg-no-repeat spy120px after:absolute after:left-0 after:top-0 after:z-[-1] after:h-full after:w-full after:bg-[#743f33] px-[10px]" data-bg="./assets/images/home-1-faq-pattern.webp" id="faq">
         <div class="container grid-cols-12 flex-col-reverse max-lg:flex max-lg:items-center lg:grid">
           <div class="reveal_anim col-span-7 xxl:col-span-6">
-            <h3 class="title">FAQ</h3>
-            <p class="section-text max-w-[467px] text-primary">Got questions? We've got answers! Explore our FAQs to learn all about our meme coin adventure." 🚀💡</p>
+            <h3 class="title max-lg:text-center">FAQ</h3>
+            <p class="section-text max-w-full text-primary max-lg:text-center">Got questions? We've got answers! Explore our FAQs to learn all about our meme coin adventure. 🚀💡</p>
             <div class="flex flex-col gap-4 spt60px">
               <!-- single faq -->
               <div class="appear-downd rounded-2xl border-4 border-dashed border-transparent bg-white/10 p-4 sm:p-6">
@@ -408,7 +408,7 @@
                   </div>
                 </div>
                 <div class="h-0 overflow-hidden duration-300">
-                  <p class="l-text mt-4 text-primary opacity-80">Labubu is a quirky, grinning character from Kasing Lung’s “The Monsters” series. Loved by collectors worldwide, it now inspires a playful crypto movement with Labubu Coin.</p>
+                  <p class="l-text mt-4 text-primary opacity-80 text-justify">Labubu is a quirky, grinning character from Kasing Lung’s “The Monsters” series. Loved by collectors worldwide, it now inspires a playful crypto movement with Labubu Coin.</p>
                 </div>
               </div>
               <!-- single faq -->
@@ -422,7 +422,7 @@
                   </div>
                 </div>
                 <div class="h-0 overflow-hidden duration-300">
-                  <p class="l-text mt-4 text-primary opacity-80">As with any crypto project, investing in Labubu Coin carries risks. While the community is strong and the vibes are fun, always do your own research, never invest more than you can afford to lose, and remember—Labubu may smile wide, but the market can frown fast!</p>
+                  <p class="l-text mt-4 text-primary opacity-80 text-justify">As with any crypto project, investing in Labubu Coin carries risks. While the community is strong and the vibes are fun, always do your own research, never invest more than you can afford to lose, and remember—Labubu may smile wide, but the market can frown fast!</p>
                 </div>
               </div>
               <!-- single faq -->
@@ -436,7 +436,7 @@
                   </div>
                 </div>
                 <div class="h-0 overflow-hidden duration-300">
-                  <p class="l-text mt-4 text-primary opacity-80">While Labubu Coin doesn’t follow a formal roadmap, the team envisions community-driven NFT and merch votes, potential game integrations featuring Labubu, and a “Labubu Cares” charity fund. Stay tuned on socials for surprise updates and unofficial sneak peeks.</p>
+                  <p class="l-text mt-4 text-primary opacity-80 text-justify">While Labubu Coin doesn’t follow a formal roadmap, the team envisions community-driven NFT and merch votes, potential game integrations featuring Labubu, and a “Labubu Cares” charity fund. Stay tuned on socials for surprise updates and unofficial sneak peeks.</p>
                 </div>
               </div>
               <!-- single faq -->
@@ -450,7 +450,7 @@
                   </div>
                 </div>
                 <div class="h-0 overflow-hidden duration-300">
-                  <p class="l-text mt-4 text-primary opacity-80">For support, drop a line to info@labubu.com or DM our team on our socials, and we’ll get back to you shortly.</p>
+                  <p class="l-text mt-4 text-primary opacity-80 text-justify">For support, drop a line to info@labubu.com or DM our team on our socials, and we’ll get back to you shortly.</p>
                 </div>
               </div>
               <!-- single faq -->
@@ -464,7 +464,7 @@
                   </div>
                 </div>
                 <div class="h-0 overflow-hidden duration-300">
-                  <p class="l-text mt-4 text-primary opacity-80">To join the Labubu community, simply follow us on our socials. We’re always here to chat, share updates, and make mischief together!</p>
+                  <p class="l-text mt-4 text-primary opacity-80 text-justify">To join the Labubu community, simply follow us on our socials. We’re always here to chat, share updates, and make mischief together!</p>
                 </div>
               </div>
             </div>
@@ -476,28 +476,28 @@
       </section>
 
       <!-- Presale is live -->
-      <section class="relative bg-cover bg-top bg-no-repeat spy120px" data-bg="./assets/images/presale-live.webp" id="contact">
+      <section class="relative bg-cover bg-top bg-no-repeat spy120px px-[10px]" data-bg="./assets/images/presale-live.webp" id="contact">
         <div class="container relative">
           <div class="text-center">
             <h3 class="title split_anim text-secondary">Presale is live</h3>
-            <p class="m-text reveal_anim mx-auto max-w-[589px] pt-4 text-secondary opacity-90 xl:pt-6">The presale is live! Grab your chance to join early, secure your tokens, and ride the wave to the moon!" 🚀💰</p>
+            <p class="m-text reveal_anim mx-auto max-w-[589px] pt-4 text-secondary opacity-90 xl:pt-6 max-lg:text-center">The presale is live! Grab your chance to join early, secure your tokens, and ride the wave to the moon! 🚀💰</p>
           </div>
           <div class="grid-cols-12 flex-col gap-6 smt60px max-xl:flex xl:grid">
             <div class="reveal_anim col-span-5 flex flex-col gap-5">
               <div class="presale-border-1 p-6">
-                <img src="./assets/images/presale-live-icon-1.png" alt="Image" />
-                <p class="lead-text mt-5 font-bold text-secondary">Connect Wallet</p>
-                <p class="m-text mt-2 text-secondary">Use Metamask or Trust Wallet to connect your wallet in seconds.</p>
+                <img src="./assets/images/presale-live-icon-1.png" class="max-lg:justify-self-center" alt="Image" />
+                <p class="lead-text mt-5 font-bold text-secondary max-lg:text-center">Connect Wallet</p>
+                <p class="m-text mt-2 text-secondary max-lg:text-center">Use Metamask or Trust Wallet to connect your wallet in seconds.</p>
               </div>
               <div class="presale-border-1 p-6">
-                <img src="./assets/images/presale-live-icon-2.png" alt="Image" />
-                <p class="lead-text mt-5 font-bold text-secondary">Choose your payment method</p>
-                <p class="m-text mt-2 text-secondary">You can buy $LHUNT with USDT, ETH, MATIC and BNB.</p>
+                <img src="./assets/images/presale-live-icon-2.png" alt="Image" class="max-lg:justify-self-center" />
+                <p class="lead-text mt-5 font-bold text-secondary max-lg:text-center">Choose your payment method</p>
+                <p class="m-text mt-2 text-secondary max-lg:text-center">You can buy $LHUNT with USDT, ETH, MATIC and BNB.</p>
               </div>
               <div class="presale-border-1 p-6">
-                <img src="./assets/images/presale-live-icon-3.png" alt="Image" />
-                <p class="lead-text mt-5 font-bold text-secondary">Confirm transaction</p>
-                <p class="m-text mt-2 text-secondary">Congratulations! You can claim your $LHUNT after the pre-sale</p>
+                <img src="./assets/images/presale-live-icon-3.png" alt="Image" class="max-lg:justify-self-center" />
+                <p class="lead-text mt-5 font-bold text-secondary max-lg:text-center">Confirm transaction</p>
+                <p class="m-text mt-2 text-secondary max-lg:text-center">Congratulations! You can claim your $LHUNT after the pre-sale</p>
               </div>
             </div>
             <div class="reveal_anim col-span-7 xxl:col-span-6 xxl:col-start-7" data-reveal-from="right">
@@ -602,16 +602,16 @@
       </section>
 
       <!-- Footer -->
-      <footer data-bg="./assets/images/home-1-footer.webp" class="bg-cover bg-top bg-no-repeat">
+      <footer data-bg="./assets/images/home-1-footer.webp" class="bg-cover bg-top bg-no-repeat px-[10px]">
         <div class="container z-10">
           <div class="reveal_anim relative max-lg:spt120px lg:pt-[288px]">
             <img src="./assets/images/toy 2.png" alt="Image" class="absolute bottom-0 right-40 max-h-[500px] w-auto max-xl:hidden" />
             <div class="rounded-[32px] bg-gradient-to-b from-[#895448] to-[#743f33] p-1">
-              <div class="grid-cols-12 gap-6 rounded-[32px] bg-[#743f33] spl60px spy80px md:grid">
+              <div class="grid-cols-12 gap-6 rounded-[32px] bg-[#743f33] spx60px spy80px xl:grid">
                 <div class="col-span-8 xl:col-span-6">
-                  <h3 class="title">Subscribe to Our Newsletter</h3>
-                  <p class="section-text text-primary">Get the latest news, exclusive airdrops, and moon-worthy updates straight to your inbox! Don't miss out on epic gains and hilarious memes</p>
-                  <div class="flex max-w-[400px] items-center justify-between rounded-lg border border-white/10 bg-white/5 smt32px">
+                  <h3 class="title max-xl:text-center">Subscribe to Our Newsletter</h3>
+                  <p class="section-text text-primary max-xl:text-center">Get the latest news, exclusive airdrops, and moon-worthy updates straight to your inbox! Don't miss out on epic gains and hilarious memes</p>
+                  <div class="flex w-full items-center justify-between rounded-lg border border-white/10 bg-white/5 smt32px max-xl:justify-self-center">
                     <input type="text" placeholder="Enter your email" class="w-full bg-transparent px-2" /> <button class="m-text bordeer h-full rounded-lg border-transparent bg-secondary py-4 text-center font-medium text-accent duration-300 spx32px placeholder:text-white hover:bg-accent hover:text-secondary">Subscribe</button>
                   </div>
                 </div>
@@ -620,58 +620,60 @@
           </div>
           <div class="grid-cols-12 gap-6 md:grid mt-5 md:mt-0">
             <div class="reveal_anim col-span-4 spb40px spt60px" data-reveal-from="left">
-              <img src="./assets/images/Labubu-Logo-White.png" alt="Image" />
-              <p class="m-text mt-4 text-primary">The value of cryptocurrencies may fluctuate Profits may be subject to capital gains or other taxes applicable in your jurisdiction</p>
-              <div class="mt-6 flex items-center gap-3">
+              <img src="./assets/images/Labubu-Logo-White.png" class="max-w-[200px] h-auto justify-self-center" alt="Image" />
+              <p class="m-text mt-4 text-primary max-md:text-center">The value of cryptocurrencies may fluctuate Profits may be subject to capital gains or other taxes applicable in your jurisdiction</p>
+              <div class="mt-6 flex items-center gap-3 max-md:justify-center">
                 <a href="#" class="group flex cursor-pointer items-center justify-center rounded-full bg-secondary p-2.5 duration-300 hover:bg-accent"> <i class="ph-fill ph-facebook-logo text-[20px] text-accent group-hover:text-secondary"></i> </a>
                 <a href="#" class="group flex cursor-pointer items-center justify-center rounded-full bg-secondary p-2.5 duration-300 hover:bg-accent"> <i class="ph-fill ph-instagram-logo text-[20px] text-accent group-hover:text-secondary"></i> </a>
                 <a href="#" class="group flex cursor-pointer items-center justify-center rounded-full bg-secondary p-2.5 duration-300 hover:bg-accent"> <i class="ph-fill ph-twitter-logo text-[20px] text-accent group-hover:text-secondary"></i> </a>
                 <a href="#" class="group flex cursor-pointer items-center justify-center rounded-full bg-secondary p-2.5 duration-300 hover:bg-accent"> <i class="ph-fill ph-linkedin-logo text-[20px] text-accent group-hover:text-secondary"></i> </a>
               </div>
             </div>
-            <div class="reveal_anim relative col-span-4 spb40px spt60px" data-reveal-from="bottom">
-              <div class="max-md:hidden">
-                <div class="absolute left-0 top-0 h-full w-0.5 bg-gradient-to-b from-accent to-[rgba(227,255,16,0.00)]"></div>
-                <div class="absolute right-0 top-0 h-full w-0.5 bg-gradient-to-t from-accent to-[rgba(227,255,16,0.00)]"></div>
+            <div class="max-md:flex md:contents">
+              <div class="reveal_anim max-md:w-fit relative col-span-4 spb40px spt60px" data-reveal-from="bottom">
+                <div class="max-md:hidden">
+                  <div class="absolute left-0 top-0 h-full w-0.5 bg-gradient-to-b from-accent to-[rgba(227,255,16,0.00)]"></div>
+                  <div class="absolute right-0 top-0 h-full w-0.5 bg-gradient-to-t from-accent to-[rgba(227,255,16,0.00)]"></div>
+                </div>
+                <div class="md:mx-auto md:w-fit">
+                  <h3 class="h5 font-title-font text-primary">Quick Links</h3>
+                  <ul class="mt-6 flex flex-col gap-3">
+                    <li>
+                      <a href="#" class="m-text flex items-center gap-1 text-primary duration-300 hover:text-white"><img src="./assets/images/star-small.png" alt="Footer Menu Star" /> <span>Home</span></a>
+                    </li>
+                    <li>
+                      <a href="#about" class="m-text flex items-center gap-1 text-primary duration-300 hover:text-white"><img src="./assets/images/star-small.png" alt="Footer Menu Star" /> <span>About</span></a>
+                    </li>
+                    <li>
+                      <a href="#roadmap" class="m-text flex items-center gap-1 text-primary duration-300 hover:text-white"><img src="./assets/images/star-small.png" alt="Footer Menu Star" /> <span>Roadmap</span></a>
+                    </li>
+                    <li>
+                      <a href="#tokenomics" class="m-text flex items-center gap-1 text-primary duration-300 hover:text-white"><img src="./assets/images/star-small.png" alt="Footer Menu Star" /> <span>Tokenomics</span></a>
+                    </li>
+                    <li>
+                      <a href="#how-to-buy" class="m-text flex items-center gap-1 text-primary duration-300 hover:text-white"><img src="./assets/images/star-small.png" alt="Footer Menu Star" /> <span>How to Buy</span></a>
+                    </li>
+                    <li>
+                      <a href="#contact" class="m-text flex items-center gap-1 text-primary duration-300 hover:text-white"><img src="./assets/images/star-small.png" alt="Footer Menu Star" /> <span>Contact</span></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="md:mx-auto md:w-fit">
-                <h3 class="h5 font-title-font text-primary">Quick Links</h3>
-                <ul class="mt-6 flex flex-col gap-3">
-                  <li>
-                    <a href="#" class="m-text flex items-center gap-1 text-primary duration-300 hover:text-white"><img src="./assets/images/star-small.png" alt="Footer Menu Star" /> <span>Home</span></a>
-                  </li>
-                  <li>
-                    <a href="#about" class="m-text flex items-center gap-1 text-primary duration-300 hover:text-white"><img src="./assets/images/star-small.png" alt="Footer Menu Star" /> <span>About</span></a>
-                  </li>
-                  <li>
-                    <a href="#roadmap" class="m-text flex items-center gap-1 text-primary duration-300 hover:text-white"><img src="./assets/images/star-small.png" alt="Footer Menu Star" /> <span>Roadmap</span></a>
-                  </li>
-                  <li>
-                    <a href="#tokenomics" class="m-text flex items-center gap-1 text-primary duration-300 hover:text-white"><img src="./assets/images/star-small.png" alt="Footer Menu Star" /> <span>Tokenomics</span></a>
-                  </li>
-                  <li>
-                    <a href="#how-to-buy" class="m-text flex items-center gap-1 text-primary duration-300 hover:text-white"><img src="./assets/images/star-small.png" alt="Footer Menu Star" /> <span>How to Buy</span></a>
-                  </li>
-                  <li>
-                    <a href="#contact" class="m-text flex items-center gap-1 text-primary duration-300 hover:text-white"><img src="./assets/images/star-small.png" alt="Footer Menu Star" /> <span>Contact</span></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="reveal_anim col-span-4 spb40px spt60px" data-reveal-from="right">
-              <div class="md:mx-auto md:w-fit">
-                <h3 class="h5 font-title-font text-primary">Contact</h3>
-                <ul class="mt-6 flex flex-col gap-6">
-                  <li>
-                    <a href="#" class="m-text flex items-center gap-2"><i class="ph ph-map-pin text-[24px] text-primary"></i><span class="text-primary hover:text-white">Dubai, UAE</span></a>
-                  </li>
-                  <li>
-                    <a href="tel:+1808555011" class="m-text flex items-center gap-2"><i class="ph ph-phone-call text-[24px] text-primary"></i><span class="text-primary hover:text-white">+971-55-327-2660</span></a>
-                  </li>
-                  <li>
-                    <a href="mailto:info@labubu.com" class="m-text flex items-center gap-2"><i class="ph ph-envelope-simple-open text-[24px] text-primary"></i><span class="text-primary hover:text-white">info@labubu.com</span></a>
-                  </li>
-                </ul>
+              <div class="reveal_anim col-span-4 spb40px spt60px max-md:ml-auto" data-reveal-from="right">
+                <div class="md:mx-auto md:w-fit">
+                  <h3 class="h5 font-title-font text-primary">Contact</h3>
+                  <ul class="mt-6 flex flex-col gap-6">
+                    <li>
+                      <a href="#" class="m-text flex items-center gap-2"><i class="ph ph-map-pin text-[24px] text-primary"></i><span class="text-primary hover:text-white">Dubai, UAE</span></a>
+                    </li>
+                    <li>
+                      <a href="tel:+1808555011" class="m-text flex items-center gap-2"><i class="ph ph-phone-call text-[24px] text-primary"></i><span class="text-primary hover:text-white">+971-55-327-2660</span></a>
+                    </li>
+                    <li>
+                      <a href="mailto:info@labubu.com" class="m-text flex items-center gap-2"><i class="ph ph-envelope-simple-open text-[24px] text-primary"></i><span class="text-primary hover:text-white">info@labubu.com</span></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
